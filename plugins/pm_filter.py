@@ -423,24 +423,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f'<b>File Name: {title}</b>\n\n'
-                f'<b>File Size: {size}</b>\n\n'
-                '<code>THis file will be deleted in 5 minutes.!</code>',
+                f'<code>📂: {title}</code>\n\n'
+                f'<code>💰: {size}</code>\n\n'
+                '⚠️ Join & Download OtherWise Never Get The File...\n⚠️ THis file will be deleted in 2 minutes.!',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('🔥 GET FILE 🔥', url = msg.link)
+                            InlineKeyboardButton('🔎 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url ="https://t.me/+VQZTK6EdBAo5MjU1")
                         ],
                         [
-                            InlineKeyboardButton('Close ❌', callback_data='close')
+                            InlineKeyboardButton('📥 ᴰᴼᵂᴺᴸᴼᴬᴰ ', url = msg.link)
+                        ],                       
+                        [
+                            InlineKeyboardButton('🔞 ᴄʟᴏꜱᴇ', callback_data='close')
                         ]
                     ]
                 )
             )
             await query.answer('Check Out The Chat',)
-            await asyncio.sleep(DELETE_TIME)
+            await asyncio.sleep(120)
             await msg1.delete()
             await msg.delete()
             del msg1, msg
