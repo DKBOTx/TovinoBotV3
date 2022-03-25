@@ -240,12 +240,9 @@ these are the extra features of tessa
 • /imdb  - <code>get the film information from IMDb source.</code>
 • /search  - <code>get the film information from various sources.</code>
 """
-    ADMIN_TXT = """Help: <b>Admin mods</b>
+    ADMIN_TXT = """
+<b>🤖Bot Commands and Usage</b>
 
-<b>NOTE:</b>
-🤖 All Bot Commands
-
-<b>Commands and Usage:</b>
 • /filter 𝗈𝗋 /add <code>𝖺𝖽𝖽 𝖺 𝖿𝗂𝗅𝗍𝖾𝗋</code>
 • /filters 𝗈𝗋 /viewfilters <code>𝗅𝗂𝗌𝗍 𝖺𝗅𝗅 𝗍𝗁𝖾 𝖿𝗂𝗅𝗍𝖾𝗋𝗌 𝗈𝖿 𝖺 𝖼𝗁𝖺𝗍</code>
 • /stop 𝗈𝗋 /del <code>𝖽𝖾𝗅𝖾𝗍𝖾 𝖺 𝗌𝗉𝖾𝖼𝗂𝖿𝗂𝖼 𝖿𝗂𝗅𝗍𝖾𝗋</code>
