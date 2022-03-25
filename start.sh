@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/Sreejithmadmax/deleterobot.git /NEW-CHANNEL
+  git clone https://github.com/Sreejithmadmax/deleterobot.git /deleterobot
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /deleterobot
