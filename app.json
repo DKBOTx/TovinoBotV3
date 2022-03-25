@@ -66,6 +66,26 @@
             "description": "Name of the collections. Defaults to Telegram_files. If you are using the same database, then use different collection name for each bot",
             "value": "Telegram_files",
             "required": false
+        },
+        "DELETE_TIME":{
+            "description": "Time in seconds to delete the Messages. Defaults to 300 (5 minutes).",
+            "value": "300",
+            "required": false
+        },
+        "START_IMAGE_URL":{
+            "description": "Start image URL. Defaults to https://telegra.ph/file/85f36a9eb6c73c31bcded.jpg",
+            "value": "https://telegra.ph/file/85f36a9eb6c73c31bcded.jpg",
+            "required": false
+        },
+        "UNAUTHORIZED_CALLBACK_TEXT":{
+            "description": "Text to show when unauthorized user tries to use bot. Defaults to 'oKda' (200 Char Limit).",
+            "value": "oKda",
+            "required": false
+        },
+        "REDIRECT_TO":{
+            "description": "Username of the channel without '@' to send files and redirect users to. Deafults to 0 (no redirect).",
+            "value": "oKda",
+            "required": false
         }
     },
     "addons": [],
