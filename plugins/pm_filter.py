@@ -423,9 +423,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f'<b>File Name: {title}</b>\n\n'
-                f'<b>File Size: {size}</b>\n\n'
-                '<code>⚠️ Join & Download OtherWise Never Get The File...\nTHis file will be deleted in 5 minutes.!✴️</code>',
+                f'<b>📂: {title}</b>\n\n'
+                f'<b>💰: {size}</b>\n\n'
+                '<code>⚠️ Join & Download OtherWise Never Get The File...\n⚠️ THis file will be deleted in 2 minutes.!</code>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
@@ -443,7 +443,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
             )
             await query.answer('Check Out The Chat',)
-            await asyncio.sleep(DELETE_TIME)
+            await asyncio.sleep(120)
             await msg1.delete()
             await msg.delete()
             del msg1, msg
