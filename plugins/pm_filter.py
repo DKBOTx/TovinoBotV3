@@ -417,7 +417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         try:
             msg = await client.send_cached_media(
-                chat_id=REDIRECT_TO,
+                chat_id=AUTH_CHANNEL,
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if ident == "filep" else False 
@@ -432,6 +432,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton('🔥 GET FILE 🔥', url = msg.link)
+                        ],
+                        [
+                            InlineKeyboardButton('🔥 GET FILE 🔥', url = "https://t.me/+o5IkaGFwgQo5Mzll")
                         ],                       
                         [
                             InlineKeyboardButton('Close ❌', callback_data='close')
