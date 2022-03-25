@@ -425,19 +425,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg1 = await query.message.reply(
                 f'<b>File Name: {title}</b>\n\n'
                 f'<b>File Size: {size}</b>\n\n'
-                '<code>THis file will be deleted in 5 minutes.!</code>',
+                '<code>⚠️ Join & Download OtherWise Never Get The File...\nTHis file will be deleted in 5 minutes.!✴️</code>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('🔥 GET FILE 🔥', url = msg.link)
+                            InlineKeyboardButton('🔎 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url ="https://t.me/+VQZTK6EdBAo5MjU1")
                         ],
                         [
-                            InlineKeyboardButton('🔥 GET FILE 🔥', url = "https://t.me/+o5IkaGFwgQo5Mzll")
+                            InlineKeyboardButton('📥 ᴰᴼᵂᴺᴸᴼᴬᴰ ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton('Close ❌', callback_data='close')
+                            InlineKeyboardButton('🔞 ᴄʟᴏꜱᴇ', callback_data='close')
                         ]
                     ]
                 )
