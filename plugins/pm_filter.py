@@ -425,7 +425,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg1 = await query.message.reply(
                 f'<code>📂: {title}</code>\n\n'
                 f'<code>💰: {size}</code>\n\n'
-                '⚠️ Join & Download OtherWise Never Get The File...\n⚠️ THis file will be deleted in 2 minutes.!',
+                '⚠️ Join & Download OtherWise Never{query.from_user.id} Get The File...\n⚠️ THis file will be deleted in 2 minutes.!',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
