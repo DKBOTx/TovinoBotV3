@@ -432,10 +432,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         [
                             InlineKeyboardButton('🔥 GET FILE 🔥', url = msg.link)
-                        ],
-                        [
-                            InlineKeyboardButton('join', url ="https://t.me/+BTM8FzN6JZhhMWQ9")
-                        ],
+                        ],                       
                         [
                             InlineKeyboardButton('Close ❌', callback_data='close')
                         ]
