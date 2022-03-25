@@ -1,13 +1,12 @@
 class script(object):
     START_TXT = """𝗛ᴇʟʟᴏ {},
 
- 𝗠ʏ 𝗡ᴀᴍᴇ ɪ𝘀  ᴏʙᴀɴᴀɪ ɪɢᴜʀᴏ🐍
+ 𝗠ʏ 𝗡ᴀᴍᴇ ɪ𝘀  ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ
 
 𝗜'𝗺 𝗮𝗻 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗳𝗶𝗹𝘁𝗲𝗿 + 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 𝗯𝗼𝘁
 
- 𝗔ᴅᴅ 𝗠ᴇ 𝗧ᴏ 𝗬ᴏᴜʀ 𝗚ʀᴏᴜᴘ. 𝗜 𝗖ᴀɴ 𝗣ʀᴏᴠɪᴅᴇ 𝗠ᴏᴠɪᴇ𝘀 ᴀɴᴅ 𝗙𝗼𝗿 𝗠ᴏʀᴇ 𝗜ɴғᴏ 𝗖ʟɪᴄᴋ 𝗧ʜᴇ 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 💣
+ 𝗔ᴅᴅ 𝗠ᴇ 𝗧ᴏ 𝗬ᴏᴜʀ 𝗚ʀᴏᴜᴘ. 𝗜 𝗖ᴀɴ 𝗣ʀᴏᴠɪᴅᴇ 𝗠ᴏᴠɪᴇ𝘀 ᴀɴᴅ 𝗙𝗼𝗿 𝗠ᴏʀᴇ 𝗜ɴғᴏ 𝗖ʟɪᴄᴋ 𝗧ʜᴇ ᴴᴱᴸᴾ 💣
 
-𝗟𝗼𝗼𝗸 𝗯𝗲𝗹𝗼𝘄 𝗯𝘂𝘁𝘁𝗼𝗻𝘀 𝗳𝗼𝗿 𝗺𝗼𝗿𝗲
 """
     HELP_TXT = """<b>𝖧𝖾𝗋𝖾 𝗂𝗌 𝗍𝗁𝖾 𝖴𝗌𝗎𝖺𝗅 𝖼𝗈𝗆𝗆𝖺𝗇𝖽𝗌:</b>
 """
@@ -244,7 +243,7 @@ these are the extra features of tessa
     ADMIN_TXT = """Help: <b>Admin mods</b>
 
 <b>NOTE:</b>
-This module only works for my admins
+🤖 All Bot Commands
 
 <b>Commands and Usage:</b>
 • /logs - <code>to get the rescent errors</code>
