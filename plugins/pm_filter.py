@@ -489,7 +489,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data='about_menu')
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
