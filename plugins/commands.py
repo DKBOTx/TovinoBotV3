@@ -24,21 +24,14 @@ BATCH_FILES = {}
 async def start(client, message: pyrogram.types.Message):
 
     if message.chat.type in ['group', 'supergroup']:
-        buttons = [
-            [
-                InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],
-            [
-                InlineKeyboardButton('COMMANDS❓', callback_data="help"),
-                InlineKeyboardButton('ABOUT🎀', callback_data='about')
-            ],
-            [
-                InlineKeyboardButton("🔍 SEARCH", switch_inline_query_current_chat=""),
-            ],
-            [
-                InlineKeyboardButton("CLOSE💤", callback_data="close")
-            ]
-        ]
+        buttons = [[
+        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+    ],[
+        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+    ],[
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
+    ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
         if not START_IMAGE_URL:
@@ -78,21 +71,14 @@ async def start(client, message: pyrogram.types.Message):
     
     if len(message.command) != 2:
 
-        buttons = [
-            [
-                InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],
-            [
-                InlineKeyboardButton('COMMANDS❓', callback_data="help"),
-                InlineKeyboardButton('ABOUT🎀', callback_data='about')
-            ],
-            [
-                InlineKeyboardButton("🔍 SEARCH", switch_inline_query_current_chat=""),
-            ],
-            [
-                InlineKeyboardButton("CLOSE💤", callback_data="close")
-            ]
-        ]
+        buttons = [[
+        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+    ],[
+        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+    ],[
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
+    ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
 
@@ -137,21 +123,14 @@ async def start(client, message: pyrogram.types.Message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
 
-        buttons = [
-            [
-                InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-            ],
-            [
-                InlineKeyboardButton('COMMANDS❓', callback_data="help"),
-                InlineKeyboardButton('ABOUT🎀', callback_data='about')
-            ],
-            [
-                InlineKeyboardButton("🔍 SEARCH", switch_inline_query_current_chat=""),
-            ],
-            [
-                InlineKeyboardButton("CLOSE💤", callback_data="close")
-            ]
-        ]
+        buttons = [[
+        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
+        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+    ],[
+        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
+    ],[
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
+    ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
