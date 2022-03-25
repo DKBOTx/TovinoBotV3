@@ -30,7 +30,7 @@ async def start(client, message: pyrogram.types.Message):
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data='about_menu')
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -77,7 +77,7 @@ async def start(client, message: pyrogram.types.Message):
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data='about_menu')
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -129,7 +129,7 @@ async def start(client, message: pyrogram.types.Message):
     ],[
         InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
     ],[
-        InlineKeyboardButton('Help ⚙', callback_data='about_menu')
+        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
