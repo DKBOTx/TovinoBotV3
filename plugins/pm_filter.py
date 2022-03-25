@@ -417,30 +417,33 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         try:
             msg = await client.send_cached_media(
-                chat_id=REDIRECT_TO,
+                chat_id=AUTH_CHANNEL,
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f'<b>File Name: {title}</b>\n\n'
-                f'<b>File Size: {size}</b>\n\n'
-                '<code>THis file will be deleted in 5 minutes.!</code>',
+                f'<code>📂: {title}</code>\n\n'
+                f'<code>💰: {size}</code>\n\n'
+                '⚠️ Join & Download OtherWise Never {u.mention} Get The File...\n⚠️ THis file will be deleted in 2 minutes.!',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('🔥 GET FILE 🔥', url = msg.link)
+                            InlineKeyboardButton('🔎 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url ="https://t.me/+VQZTK6EdBAo5MjU1")
                         ],
                         [
-                            InlineKeyboardButton('Close ❌', callback_data='close')
+                            InlineKeyboardButton('📥 ᴰᴼᵂᴺᴸᴼᴬᴰ ', url = msg.link)
+                        ],                       
+                        [
+                            InlineKeyboardButton('🔞 ᴄʟᴏꜱᴇ', callback_data='close')
                         ]
                     ]
                 )
             )
             await query.answer('Check Out The Chat',)
-            await asyncio.sleep(DELETE_TIME)
+            await asyncio.sleep(120)
             await msg1.delete()
             await msg.delete()
             del msg1, msg
@@ -986,7 +989,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "close":
         await query.message.delete()
     elif query.data == 'tips':
-        await query.answer("=> Ask with correct spelling\n=> Don't ask movies those are not released in OTT\n=> For better results:\n\t\t\t\t\t\t- MovieName Language\n\t\t\t\t\t\t- Eg: Solo Malayalam", True)
+        await query.answer("=> Ask with correct spelling\n=> Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n=> For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021", True)
     try: await query.answer('Piracy Is Crime') 
     except: pass
 
@@ -1102,7 +1105,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
             **locals()
         )
     else:
-        cap = f"Here is what i found for your query {search}"
+        cap = f"👮‍♂ ɴᴏᴛɪᴄᴇ :ɪ𝙵 ʏᴏᴜ ᴅᴏ ɴᴏᴛ sᴇᴇ ᴛʜᴇ 𝙵ɪʟᴇ𝚂 ᴏ𝙵 ᴛʜɪ𝚂 ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀ𝚂ᴋᴇᴅ 𝙵ᴏʀ. ʟᴏᴏᴋ ᴀᴛ ɴᴇ𝚇ᴛ ᴘᴀɢᴇ🔎 {message.sender_chat.title}"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
