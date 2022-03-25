@@ -417,7 +417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         try:
             msg = await client.send_cached_media(
-                chat_id="https://t.me/+BTM8FzN6JZhhMWQ9",
+                chat_id=REDIRECT_TO,
                 file_id=file_id,
                 caption=f_caption,
                 protect_content=True if ident == "filep" else False 
