@@ -423,7 +423,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f'Hei 👋 {query.from_user.mention} 😍'\n
+                f'Hei  {query.from_user.mention} '\n
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
