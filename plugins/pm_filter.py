@@ -423,9 +423,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f' """Hai ✌️ {query.from_user.mention} ✌️ """\n\n'
-                f'<code>📂: {title}</code>\n\n'
-                f'<code>💰: {size}</code>\n\n'
+                f' """Hai 👋 {query.from_user.mention} 😍 """\n\n'
+                ' Your File Is Ready📫 ', \n
+                f'<code>📂Movie Name: {title}</code>\n\n'              
                 '⚠️ Join & Download OtherWise Never {u.mention} Get The File...\n⚠️ THis file will be deleted in 2 minutes.!',
                 True,
                 'html',
