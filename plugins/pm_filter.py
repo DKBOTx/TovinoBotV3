@@ -424,7 +424,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n📫 Your File Is Ready\n\n'           
-                f'<code>📂Movie Name: {title}</code>\n\n'              
+                f'<code>📂{title}</code>\n\n'              
                 '<b><u>👉ഈ മൂവി ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ (📢Join Channel📢) ലിങ്കിൽ ഉള്ള ചാനലിൽ  ചെയ്യണം\n👉ചാനലിൽ Join ആയ ശേഷം ഡൗൺലോഡ് ബട്ടൺ അമർത്തുക \n\n👉In Order To Get The Movie Requested..You Must Have To Join Our Channel First..\n👉 After That, Click  🔄 Download 🔄  Button. TO Get Movie File\n\n</u></b>',
                 True,
                 'html',
