@@ -361,8 +361,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             try:
                 f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
                                                        file_size='' if size is None else size,
-                                                       file_caption='' if f_caption is None else f_caption
-                                                       query.from_user.mention=''if query.from_user.mention is none else query.from_user.mention)
+                                                       file_caption='' if f_caption is None else f_caption)                                                      
             except Exception as e:
                 logger.exception(e)
             f_caption = f_caption
