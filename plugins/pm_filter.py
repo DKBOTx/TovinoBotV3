@@ -423,7 +423,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f"""Hei 👋{query.from_user.mention}😍"""\n
+                f'Hei 👋 {query.from_user.mention} 😍'\n
                 '📫Your File Is Ready To Download'\n
                 f'<code>📂Movie Name: {title}</code>\n\n'
                 <b>'ഈ ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ ലിങ്കിൽ ഉള്ള ചാനലിൽ Join ചെയ്യണം(🔎 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ)',
