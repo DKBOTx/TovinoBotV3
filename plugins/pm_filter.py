@@ -423,9 +423,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n'           
+                f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n📫 Your File Is Ready'           
                 f'<code>📂Movie Name: {title}</code>\n\n'              
-                '<b><u>👉ഈ മൂവി ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ ലിങ്കിൽ ഉള്ള ചാനലിൽ Join ചെയ്യണം\n👉ചാനലിൽ Join ആയ ശേഷം ഡൗൺലോഡ് ബട്ടൺ അമർത്തുക \n👉🗣 In Order To Get The Movie Requested..You Must Have To Join Our Channel First..\n👉 After That, Click  🔄 Download 🔄  Button. TO Get Movie File🙈\n👉THis file will be deleted in 2 minutes.!</b></u>',
+                '<b><u>👉ഈ മൂവി ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ ലിങ്കിൽ ഉള്ള ചാനലിൽ Join ചെയ്യണം\n👉ചാനലിൽ Join ആയ ശേഷം ഡൗൺലോഡ് ബട്ടൺ അമർത്തുക \n\n👉In Order To Get The Movie Requested..You Must Have To Join Our Channel First..\n👉 After That, Click  🔄 Download 🔄  Button. TO Get Movie File\n\n</u>👉THis file will be deleted in 5 minutes.!</b>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
@@ -443,7 +443,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
             )
             await query.answer('Check Out The Chat',)
-            await asyncio.sleep(120)
+            await asyncio.sleep(300)
             await msg1.delete()
             await msg.delete()
             del msg1, msg
