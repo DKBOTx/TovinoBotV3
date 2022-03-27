@@ -423,22 +423,25 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f"""Hai {query.from_user.mention}"""
-                f'<code>📂: {title}</code>\n\n'
-                f'<code>💰: {size}</code>\n\n'
-                '⚠️ Join & Download OtherWise Never {u.mention} Get The File...\n⚠️ THis file will be deleted in 2 minutes.!',
+                f"""Hei 👋{query.from_user.mention}😍"""\n
+                '📫Your File Is Ready To Download'\n
+                f'<code>📂Movie Name: {title}</code>\n\n'
+                <b>'ഈ ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ ലിങ്കിൽ ഉള്ള ചാനലിൽ Join ചെയ്യണം(🔎 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ)',
+                'ചാനലിൽ Join ആയ ശേഷം ഡൗൺലോഡ് ബട്ടൺ അമർത്തുക ഫയൽ ലഭിക്കുന്നതാണ്✌️',
+                '🗣 In Order To Get The Movie Requested By You in Our Group, You Must Have To Join Our Channel First..',
+                ' By Clicking " 📢 Join Channel 📢 " Button or the Link shown Below. After That, Click " 🔄 Download 🔄 " Button. TO Get Movie File🙈',</b>
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('🔎 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ', url ="https://t.me/+VQZTK6EdBAo5MjU1")
+                            InlineKeyboardButton('📢 Join Channel 📢', url ="https://t.me/+VQZTK6EdBAo5MjU1")
                         ],
                         [
-                            InlineKeyboardButton('📥 ᴰᴼᵂᴺᴸᴼᴬᴰ ', url = msg.link)
+                            InlineKeyboardButton('🔄 Download 🔄 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton('🔞 ᴄʟᴏꜱᴇ', callback_data='close')
+                            InlineKeyboardButton('🔞 Close', callback_data='close')
                         ]
                     ]
                 )
