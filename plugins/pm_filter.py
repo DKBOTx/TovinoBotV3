@@ -424,12 +424,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             msg1 = await query.message.reply(
                 f'Hei 👋 {query.from_user.mention} 😍'\n
-                '📫Your File Is Ready To Download'\n
-                f'<code>📂Movie Name: {title}</code>'\n\n
-                <b>'ഈ ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ ലിങ്കിൽ ഉള്ള ചാനലിൽ Join ചെയ്യണം(🔎 ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ)',
-                'ചാനലിൽ Join ആയ ശേഷം ഡൗൺലോഡ് ബട്ടൺ അമർത്തുക ഫയൽ ലഭിക്കുന്നതാണ്✌️',
-                '🗣 In Order To Get The Movie Requested By You in Our Group, You Must Have To Join Our Channel First..',
-                ' By Clicking " 📢 Join Channel 📢 " Button or the Link shown Below. After That, Click " 🔄 Download 🔄 " Button. TO Get Movie File🙈',</b>
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
