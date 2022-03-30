@@ -412,8 +412,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 logger.exception(e)
             f_caption = f_caption
+            size = size
         if f_caption is None:
             f_caption = f"{files.file_name}"
+            size = f"{files.file_size}"
 
         try:
             msg = await client.send_cached_media(
@@ -425,7 +427,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n<b>📫 Your File is Ready</b>\n\n'           
                 f'<b>📂 Mᴏᴠɪᴇ Nᴀᴍᴇ</b> : {title}\n\n'              
-                f'<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b> : {file_size}',
+                f'<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b> : {size}',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
@@ -468,8 +470,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             except Exception as e:
                 logger.exception(e)
                 f_caption = f_caption
+                size = size
         if f_caption is None:
             f_caption = f"{title}"
+        if size is None:
+            size = f"{size}"
+
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
