@@ -66,7 +66,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"🐍[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f"▫️ {get_size(file.file_size)}📂{file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 )
             ] 
             for file in files
@@ -425,13 +425,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n📫 Your File Is Ready\n\n'           
                 f'<code>📂{title}</code>\n\n'              
-                '<b><u>👉ഈ മൂവി ഫയൽ ലഭിക്കണമെങ്കിൽ താഴെ (📢Join Channel📢) ലിങ്കിൽ ഉള്ള ചാനലിൽ  ചെയ്യണം\n👉ചാനലിൽ Join ആയ ശേഷം ഡൗൺലോഡ് ബട്ടൺ അമർത്തുക \n\n👉In Order To Get The Movie Requested..You Must Have To Join Our Channel First..\n👉 After That, Click  🔄 Download 🔄  Button. TO Get Movie File\n\n</u></b>',
+                '<b><u>👉To get this movie file, you need to click on the link below (📢Join Channel📢)\n👉After joining the channel, press the download button from \n\n👉In Order To Get The Movie Requested..You Must Have To Join Our Channel First..\n👉 After That, Click  🔄 Download 🔄  Button. TO Get Movie File\n\n</u></b>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('📢 Join Channel 📢', url ="https://t.me/+VQZTK6EdBAo5MjU1")
+                            InlineKeyboardButton('📢 Join Channel 📢', url ="https://t.me/+yNGRugwc4FkwNGQ1")
                         ],
                         [
                             InlineKeyboardButton('🔄 Download 🔄 ', url = msg.link)
@@ -484,8 +484,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
+        InlineKeyboardButton('◽ Channel', url='https://t.me/ss_linkz'),
+        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
     ],[
         InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
     ],[
@@ -1023,7 +1023,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                        text=f"🐍[{get_size(file.file_size)}] {file.file_name}", 
+                        text=f"▫️ {get_size(file.file_size)}📂{file.file_name}", 
                         callback_data=f'{pre}#{file.file_id}#{msg.from_user.id if msg.from_user is not None else 0}'
                 )
             ] 
