@@ -87,7 +87,7 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔮 {search} 🔮', 'dupe')
+            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
         ]
     )
     btn.insert(1,
@@ -423,21 +423,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n📫 Your File Is Ready\n\n'           
-                f'<code>📂{title}</code>\n\n'              
-                '<b><u>👉To get this movie file, you need to click on the link below (📢Join Channel📢)\n👉After joining the channel, press the download button from \n\n👉In Order To Get The Movie Requested..You Must Have To Join Our Channel First..\n👉 After That, Click  🔄 Download 🔄  Button. TO Get Movie File\n\n</u></b>',
+                f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n'           
+                f'<b>📫 Your File is Ready</b>\n\n'              
+                '<b>📂 Mᴏᴠɪᴇ Nᴀᴍᴇ</b>:{title}\n\n<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b>:{file_size}',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('📢 Join Channel 📢', url ="https://t.me/+yNGRugwc4FkwNGQ1")
-                        ],
-                        [
-                            InlineKeyboardButton('🔄 Download 🔄 ', url = msg.link)
+                            InlineKeyboardButton('📥 Download 📥 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton('🔞 Close', callback_data='close')
+                            InlineKeyboardButton('⚠️Can't Access ❓ Click Here⚠️', url=f'https://t.me/ss_files')
                         ]
                     ]
                 )
@@ -486,10 +483,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
         InlineKeyboardButton('◽ Channel', url='https://t.me/ss_linkz'),
         InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
-    ],[
-        InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
@@ -1046,7 +1039,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔮 {search} 🔮', 'dupe')
+            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
         ]
     )
     btn.insert(1,
