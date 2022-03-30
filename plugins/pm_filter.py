@@ -423,9 +423,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
-                f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n'           
-                f'<b>📫 Your File is Ready</b>\n\n'              
-                '<b>📂 Mᴏᴠɪᴇ Nᴀᴍᴇ</b> : {title}\n\n<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b> : {file_size}',
+                f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n<b>📫 Your File is Ready</b>\n\n'           
+                f'<b>📂 Mᴏᴠɪᴇ Nᴀᴍᴇ</b> : {title}\n\n'              
+                f'<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b> : {get_size}',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
