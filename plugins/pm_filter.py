@@ -434,7 +434,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton('📥 Download 📥 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton('⚠️Can't Access ❓ Click Here⚠️', url=f'https://t.me/ss_files')
+                            InlineKeyboardButton("⚠️Can't Access ❓ Click Here⚠️", url=f'https://t.me/ss_files')
                         ]
                     ]
                 )
