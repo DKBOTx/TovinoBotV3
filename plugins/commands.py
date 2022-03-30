@@ -25,12 +25,8 @@ async def start(client, message: pyrogram.types.Message):
 
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
-    ],[
-        InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
+        InlineKeyboardButton('◽ Channel, url='https://t.me/ss_linkx'),
+        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
     ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -72,12 +68,8 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) != 2:
 
         buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
-    ],[
-        InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
+        InlineKeyboardButton('◽ Channel, url='https://t.me/ss_linkx'),
+        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
     ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -124,12 +116,8 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
 
         buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
-    ],[
-        InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data='admin')
+        InlineKeyboardButton('◽ Channel, url='https://t.me/ss_linkx'),
+        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
     ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
