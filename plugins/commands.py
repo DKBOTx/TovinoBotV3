@@ -25,8 +25,8 @@ async def start(client, message: pyrogram.types.Message):
 
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
-        InlineKeyboardButton('◽ Channel, url='https://t.me/ss_linkx'),
-        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
+        InlineKeyboardButton('◽ Channel, url=f'https://t.me/ss_linkz'),
+        InlineKeyboardButton('Group ◽', url =f'https://t.me/Netflix_Movies_Group')
     ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -68,8 +68,8 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) != 2:
 
         buttons = [[
-        InlineKeyboardButton('◽ Channel, url='https://t.me/ss_linkx'),
-        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
+        InlineKeyboardButton('◽ Channel, url=f'https://t.me/ss_linkx'),
+        InlineKeyboardButton('Group ◽', url =f'https://t.me/Netflix_Movies_Group')
     ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -116,8 +116,8 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
 
         buttons = [[
-        InlineKeyboardButton('◽ Channel, url='https://t.me/ss_linkx'),
-        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
+        InlineKeyboardButton('◽ Channel, url=f'https://t.me/ss_linkx'),
+        InlineKeyboardButton('Group ◽', url =f'https://t.me/Netflix_Movies_Group')
     ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
