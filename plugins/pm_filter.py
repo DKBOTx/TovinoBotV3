@@ -66,7 +66,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"▫️ {get_size(file.file_size)}📂{file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
+                    text=f"📂 [{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}#{query.from_user.id}'
                 )
             ] 
             for file in files
@@ -436,7 +436,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton('📥 Download 📥 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton("⚠️Can't Access ❓ Click Here⚠️", url=f'https://t.me/ss_files')
+                            InlineKeyboardButton("⚠️Can't Access ❓ Click Here⚠️", url=f'https://t.me/+yNGRugwc4FkwNGQ1')
                         ]
                     ]
                 )
