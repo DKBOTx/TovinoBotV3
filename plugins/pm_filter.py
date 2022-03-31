@@ -355,7 +355,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
-        query.from_user.mention = query.from_user.mention
+        mention = query.from_user.mention
         f_caption = files.caption
         settings = await get_settings(query.message.chat.id)
         if CUSTOM_FILE_CAPTION:
@@ -403,7 +403,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
-        query.from_user.mention = query.from_user.mention
+        mention = query.from_user.mention
         f_caption = files.caption
         settings = await get_settings(query.message.chat.id)
         if CUSTOM_FILE_CAPTION:
@@ -415,9 +415,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.exception(e)
             f_caption = f_caption
             size = size
+            mention = mention
         if f_caption is None:
             f_caption = f"{files.file_name}"
             size = f"{files.file_size}"
+            mention = f"{query.from_user.mention}"
 
         try:
             msg = await client.send_cached_media(
@@ -463,6 +465,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
+        mention = query.from_user.mention
         f_caption = files.caption
         if CUSTOM_FILE_CAPTION:
             try:
@@ -473,10 +476,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.exception(e)
                 f_caption = f_caption
                 size = size
+                mention = mention
         if f_caption is None:
             f_caption = f"{title}"
         if size is None:
             size = f"{size}"
+        if mention is None:
+            mention = f"{mention}"
 
         await query.answer()
         await client.send_cached_media(
