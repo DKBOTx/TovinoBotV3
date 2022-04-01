@@ -1183,10 +1183,10 @@ async def advantage_spell_chok(msg):
             callback_data=f"spolling#{user}#{k}",
         )
     ] for k, movie in enumerate(movielist)]
-    btn.append([InlineKeyboardButton(text="Close", callback_data=f'spolling#{user}#close_spellcheck')])
-    await msg.reply("I couldn't find anything related to that\nDid you mean any one of these?",
+    btn.append([InlineKeyboardButton(text="🔍ɢᴏᴏɢʟᴇ🔎", url=f'https://google.com/search?q={search}')]
+               [InlineKeyboardButton(text="🔍ʏᴀɴᴅᴇx🔎", url=f'https://yandex.com/search?text={search}')])
+    await msg.reply("Google, click on any button labeled yendex and find the correct movie name and enter it here Movie / Tv. Web Series will get ..\n\nIf you still do not get it. Movie Name & year after @admin. Example: Add @admin kala 2020 to the group in this way. The admin will upload within 24 hours\n\nIf you ask for a movie that has been released in theaters, you will not get it",
                     reply_markup=InlineKeyboardMarkup(btn))
-
 
 async def manual_filters(client, message, text=False):
     group_id = message.chat.id
