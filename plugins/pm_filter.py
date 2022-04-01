@@ -430,8 +430,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n<b>📫 Your File is Ready</b>\n\n'           
-                f'<b>📂 Mᴏᴠɪᴇ Nᴀᴍᴇ</b> : {title}\n\n'              
-                f'<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b> : {size}',
+                f'<b>📂 Mᴏᴠɪᴇ Nᴀᴍᴇ</b> : <code>{title}</code>\n\n'              
+                f'<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b> : <b>{size}</b>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                             InlineKeyboardButton('📥 Download 📥 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton("⚠️Can't Access ❓ Click Here⚠️", url=f'https://t.me/+yNGRugwc4FkwNGQ1')
+                            InlineKeyboardButton("⚠️ Can't Access ❓ Click Here ⚠️", url=f'https://t.me/+yNGRugwc4FkwNGQ1')
                         ]
                     ]
                 )
