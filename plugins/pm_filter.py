@@ -87,13 +87,13 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
+            InlineKeyboardButton(f'🌀 {search} 🌀', 'dupe')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📁 Files: {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'‼️ Tips', 'tips')
+            InlineKeyboardButton(f'𝖥𝗂𝗅𝖾𝗌 : {len(files)}', 'dupe'),
+            InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'tips')
         ]
     )
 
@@ -134,14 +134,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("Not For You", show_alert=True)
+        return await query.answer("𝖲𝗐𝖺𝗇𝗍𝗁𝖺𝗆𝖺𝗒𝗂 𝖲𝖾𝖺𝗋𝖼𝗁 𝖢𝗁𝖾𝗒𝖺𝖽𝖺 𝖬𝗈𝗐𝗇𝖾", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.message_id)
     if not movies:
-        return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
+        return await query.answer("𝖱𝖾𝗊𝗎𝖾𝗌𝗍 𝖠𝗀𝖺𝗂𝗇 𝖣𝗎𝖽𝖾, 𝖥𝗂𝗅𝖾 𝖫𝗂𝗇𝗄 𝖾𝗑𝗉𝗂𝗋𝖾𝖽.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('Checking for Movie in database...')
+    await query.answer('𝖭𝗃𝖺𝗇 𝖬𝗈𝗏𝗂𝖾 𝗈𝗇𝗇 𝖳𝗁𝖺𝗉𝗉𝖺𝗍𝖾 𝖻𝗋𝗈...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -149,7 +149,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase Contact @PromotionMediator (admin) to add This Movie file📂')
+            k = await query.message.edit('This Movie Not Found In DataBase')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -184,7 +184,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             title = query.message.chat.title
 
         else:
-            return await query.answer('Piracy Is Crime')
+            return await query.answer('𝗌𝖺𝗇𝗍𝗁𝗈𝗌𝗁𝖺𝗆 𝖺𝗅𝗅𝖾')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == "creator") or (str(userid) in ADMINS):
@@ -383,7 +383,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                await query.answer('𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝖽 𝗒𝗈𝗎 𝖿𝗂𝗅𝖾𝗌 𝖯𝖾𝗋𝗌𝗈𝗇𝖺𝗅𝗒 , 𝖢𝗁𝖾𝖼𝗄 𝗆𝗒 𝗉𝗆', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -425,22 +425,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>{title}</code>\n\n⚠️ This file will be deleted in 5 minute as it has copyright ... !!!\n\nAfter moving from here to saved message or somewhere else, download ... !!!\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@SS_Linkz</b>\n♻️ 𝗝𝗢𝗜𝗡 : <b>@Netflix_Movies_Group</b>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[DK_BOTx] {title}</code>\n\n⚠️ This file will be deleted in 5 minute as it has copyright ... !!!\n\nAfter moving from here to saved message or somewhere else, download ... !!!\n\n♻️ 𝗝𝗢𝗜𝗡 : <b>@S_MOVIE_CHATS</b>\n♻️ 𝗝𝗢𝗜𝗡 : <b>@S_FILE_UPDATES</b>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
                 f'<b> Hai 👋 {query.from_user.mention} </b>😍\n\n<b>📫 Your File is Ready</b>\n\n'           
-                f'<b>📂 Mᴏᴠɪᴇ Nᴀᴍᴇ</b> : <code>{title}</code>\n\n'              
-                f'<b>⚙️ Mᴏᴠɪᴇ Sɪᴢᴇ</b> : <b>{size}</b>',
+                f'<b>📂 Fɪʟᴇ Nᴀᴍᴇ</b> : <code>[DK_BOTx] {title}</code>\n\n'              
+                f'<b>⚙️ Fɪʟᴇ Sɪᴢᴇ</b> : <b>{size}</b>',
                 True,
                 'html',
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('📥 Download 📥 ', url = msg.link)
+                            InlineKeyboardButton('📥 𝖣𝗈𝗐𝗇𝗅𝗈𝖺𝖽 📥 ', url = msg.link)
                         ],                       
                         [
-                            InlineKeyboardButton("⚠️ Can't Access ❓ Click Here ⚠️", url=f'https://t.me/+yNGRugwc4FkwNGQ1')
+                            InlineKeyboardButton("⚠️ 𝖢𝖺𝗇'𝗍 𝖠𝖼𝖼𝖾𝗌𝗌 ❓ 𝖢𝗅𝗂𝖼𝗄 𝖧𝖾𝗋𝖾 ⚠️", url=f'https://t.me/+tu5TMHWzu9JiZWE1')
                         ]
                     ]
                 )
@@ -495,8 +495,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-        InlineKeyboardButton('◽ Channel', url='https://t.me/ss_linkz'),
-        InlineKeyboardButton('Group ◽', url ='https://t.me/Netflix_Movies_Group')
+        InlineKeyboardButton('ᴅᴋ ʙᴏᴛx, url='https://t.me/dk_botx'),
+        InlineKeyboardButton('ᴍʏ ɢʀᴏᴜᴘ', url ='https://t.me/s_movie_chats')
     ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.delete()
@@ -996,7 +996,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "close":
         await query.message.delete()
     elif query.data == 'tips':
-        await query.answer("=> Ask with correct spelling\n=> Don't ask movies those are not released in OTT Some Of Theatre Quality Available🤧\n=> For better results:\n\t\t\t\t\t\t- MovieName year\n\t\t\t\t\t\t- Eg: Kuruthi 2021", True)
+        await query.answer("=> 𝖲𝖾𝗇𝖽 𝖼𝗈𝗋𝗋𝖾𝖼𝗍 𝖬𝗈𝗏𝗂𝖾/𝗌𝖾𝗋𝗂𝖾𝗌 𝖭𝖺𝗆𝖾\n=𝖳𝗈 𝖦𝖾𝗍 𝖡𝖾𝗍𝗍𝖾𝗋 𝗋𝖾𝗌𝗎𝗅𝗍 𝖥𝗈𝗋 𝗌𝖾𝗋𝗂𝖾𝗌 𝖤𝗀: 𝖯𝖾𝖺𝗄𝗒 𝖻𝗅𝗂𝗇𝖽𝖾𝗋𝗌 𝖲0𝖤01", True)
     try: await query.answer('Piracy Is Crime') 
     except: pass
 
@@ -1053,13 +1053,13 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🔰 {search} 🔰', 'dupe')
+            InlineKeyboardButton(f'🌀 {search} 🌀', 'dupe')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'📁 Files: {total_results}', 'dupe'),
-            InlineKeyboardButton(f'‼️ Tips', 'tips')
+            InlineKeyboardButton(f'𝖥𝗂𝗅𝖾𝗌 : {total_results}', 'dupe'),
+            InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'tips')
         ]
     )
 
@@ -1112,7 +1112,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
             **locals()
         )
     else:
-        cap = f"👮‍♂ ɴᴏᴛɪᴄᴇ :ɪ𝙵 ʏᴏᴜ ᴅᴏ ɴᴏᴛ sᴇᴇ ᴛʜᴇ 𝙵ɪʟᴇ𝚂 ᴏ𝙵 ᴛʜɪ𝚂 ᴍᴏᴠɪᴇ ʏᴏᴜ ᴀ𝚂ᴋᴇᴅ 𝙵ᴏʀ. ʟᴏᴏᴋ ᴀᴛ ɴᴇ𝚇ᴛ ᴘᴀɢᴇ🔎\n©️քօաɛʀɛɖ ɮʏ :{message.chat.title}"
+        cap = f"𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖥𝗂𝗅𝗂𝗆 : {search} , 𝖶𝗁𝖺𝗍 𝖨 𝗁𝖺𝗏𝖾 𝖿𝗈𝗎𝗇𝖽 𝖠𝗋𝖾"
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
@@ -1143,7 +1143,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("𝖨 𝖼𝖺𝗇𝗍 𝖿𝗂𝗇𝖽 𝗂𝗍 𝗂𝗇 𝗆𝗒 𝖣𝖺𝗍𝖺𝖡𝖺𝗌𝖾.")
         await asyncio.sleep(8)
         await k.delete()
         return
@@ -1172,13 +1172,13 @@ async def advantage_spell_chok(msg):
     movielist += [(re.sub(r'(\-|\(|\)|_)', '', i, flags=re.IGNORECASE)).strip() for i in gs_parsed]
     movielist = list(dict.fromkeys(movielist))  # removing duplicates
     if not movielist:
-        k = await msg.reply("Google, click on any button labeled Google and find the correct movie name and enter it here Movie / Tv. Web Series will get ..\n\nIf you still do not get it. Movie Name & year after @admin. Example: Add @admin kala 2020 to the group in this way. The admin will upload within 24 hours\n\nIf you ask for a movie that has been released in theaters, you will not get it")
+        k = await msg.reply("𝖡𝗋𝗈, 𝖢𝗁𝖾𝖼𝗄 𝗍𝗁𝖾 𝗌𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝖸𝗈𝗎 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝖽 𝗂𝗇 𝗀𝗈𝗈𝗀𝗅𝖾. 𝖨𝖿 𝖸𝗈𝗎 𝗁𝖺𝗏𝖾 𝗋𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖥𝗈𝗋 𝖢𝖺𝗆 𝗉𝗋𝗂𝗇𝗍 𝖸𝗈𝗎 𝗐𝗂𝗅𝗅 𝗇𝗈𝗍 𝖦𝖾𝗍 𝗂𝗍.")
         await asyncio.sleep(8)
         await k.delete()
         return
     SPELL_CHECK[msg.message_id] = movielist
     btn = [InlineKeyboardButton(text="🔍ɢᴏᴏɢʟᴇ🔎", url=f'https://google.com/search?q={query}')]
-    await msg.reply("Google, click on any button labeled Google and find the correct movie name and enter it here Movie / Tv. Web Series will get ..\n\nIf you still do not get it. Movie Name & year after @admin. Example: Add @admin kala 2020 to the group in this way. The admin will upload within 24 hours\n\nIf you ask for a movie that has been released in theaters, you will not get it",
+    await msg.reply("𝖡𝗋𝗈, 𝖢𝗁𝖾𝖼𝗄 𝗍𝗁𝖾 𝗌𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝗈𝖿 𝗆𝗈𝗏𝗂𝖾/𝗌𝖾𝗋𝗂𝖾𝗌 𝗇𝖺𝗆𝖾 𝗒𝗈𝗎 𝗁𝖺𝗏𝖾 𝗋𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝗂𝗇 𝗀𝗈𝗈𝗀𝗅𝖾.",
                     reply_markup=InlineKeyboardMarkup(btn))
 
 async def manual_filters(client, message, text=False):
