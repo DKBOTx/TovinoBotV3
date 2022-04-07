@@ -20,9 +20,9 @@ async def sng(bot, message):
           await mee.delete()
           try:
             await mee.delete()
-            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.message_id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs ", url = f"t.me/xd_botz")]]))
+            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.message_id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs ", url = f"t.me/dk_botx")]]))
           except Exception as e:                            
-             await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/xd_botz")]]))
+             await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/dk_botx")]]))
 
 
 
@@ -33,7 +33,7 @@ def search(song):
        
 def lyrics(song):
         fin = search(song)
-        text = f'**🎶 Successfully Extracted Lyrics Of {song} 🎶**\n\n'
+        text = f'🎶 Successfully Extracted Lyrics Of {song} 🎶\n\n'
         text += f'`{fin["lyrics"]}`'
-        text += '\n\n\n**Made By Artificial Intelligence**'
+        text += '\n\n\nᴍᴀᴅᴇ ᴀ ɪ ᴏғ @FILESEARCHxBOT'
         return text
