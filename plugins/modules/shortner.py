@@ -15,7 +15,7 @@ OWLY_API = os.environ.get("OWLY_API", None)
 BUTTONS = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text='⚙ Join Updates Channel ⚙', url='https://telegram.me/telegram')
+            InlineKeyboardButton(text='⚙ ᴅᴋ ʙᴏᴛx ⚙', url='https://t.me/dk_botx')
         ]
     ]
 )
@@ -59,7 +59,7 @@ async def inline_short(bot, update):
 
 
 async def short(link):
-    shorten_urls = "**--Shorted URLs--**\n"
+    shorten_urls = "𝖲𝗁𝗈𝗋𝗍𝖾𝖽 𝖴𝖱𝖫𝗌\n"
     
     # Bit.ly shorten
     if BITLY_API:
