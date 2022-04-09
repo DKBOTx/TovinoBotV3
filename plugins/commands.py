@@ -25,8 +25,8 @@ async def start(client, message: pyrogram.types.Message):
 
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
-        InlineKeyboardButton("ᴅᴋ ʙᴏᴛx", url=f'https://t.me/dk_botx'),
-        InlineKeyboardButton("ᴍʏ ɢʀᴏᴜᴘ", url =f'https://t.me/s_movie_chats')
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
+        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
        
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -68,8 +68,8 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) != 2:
 
         buttons = [[
-        InlineKeyboardButton("ᴅᴋ ʙᴏᴛx", url=f'https://t.me/dk_botx'),
-        InlineKeyboardButton("ᴍʏ ɢʀᴏᴜᴘ", url =f'https://t.me/s_movie_chats')
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
+        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -116,8 +116,8 @@ async def start(client, message: pyrogram.types.Message):
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
 
         buttons = [[
-        InlineKeyboardButton("ᴅᴋ ʙᴏᴛx", url=f'https://t.me/dk_botx'),
-        InlineKeyboardButton("ᴍʏ ɢʀᴏᴜᴘ", url =f'https://t.me/s_movie_chats')
+        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu'),
+        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
         
         reply_markup = InlineKeyboardMarkup(buttons)
