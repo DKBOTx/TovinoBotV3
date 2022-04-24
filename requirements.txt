@@ -25,7 +25,6 @@ Pymoe
 pendulum
 pytesseract
 pyshorteners
-catdoesnotexist
 python-decouple
 speedtest-cli
 countryinfo
