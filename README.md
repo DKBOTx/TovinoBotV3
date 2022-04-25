@@ -2,4 +2,4 @@
 
 Vellachil edukaruth ketto !
 
-https://www.heroku.com/deploy/?template=https://github.com/vloggerdeven/vellachilaano
+https://www.heroku.com/deploy/?template=https://github.com/achukuttanTG/vellachilaano
