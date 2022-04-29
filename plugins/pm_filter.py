@@ -482,11 +482,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if size is None:
             size = f"{size}"
         if mention is None:
-            mention = f"{mention}"
-
-buttons = [[
-                  InlineKeyboardButton('➕ Aᴅᴅ Bᴏᴛ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ➕', url='https://t.me/FILESEARCHxBOT?startgroup=true')
-                  ]]                 
+            mention = f"{mention}"                 
 
         await query.answer()
         await client.send_cached_media(
@@ -494,7 +490,6 @@ buttons = [[
             file_id=file_id,
             caption=f_caption,
             protect_content=True if ident == 'checksubp' else False
-            reply_markup=InlineKeyboardMarkup(buttons)
         )
     elif query.data == "pages":
         await query.answer()
