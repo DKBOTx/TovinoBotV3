@@ -425,7 +425,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
                 file_id=file_id,
-                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<code>[DK_BOTx] {title}</code>\n\n⚠️ <b>This file will be deleted in 1 minute as it has copyright ... !!!</b>\n\n<b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 1 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</b>\n\n<b>@FILESEARCHxBOT</b>',
+                caption=f'<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<b>[DK_BOTx] {title}</b>\n\n⚠️ <i>This file will be deleted in 5 minute as it has copyright ... !!!</i>\n\n<b>കോപ്പിറൈറ്റ് ഉള്ളതുകൊണ്ട് ഫയൽ 5 മിനിറ്റിനുള്ളിൽ ഇവിടെനിന്നും ഡിലീറ്റ് ആകുന്നതാണ് അതുകൊണ്ട് ഇവിടെ നിന്നും മറ്റെവിടെക്കെങ്കിലും മാറ്റിയതിന് ശേഷം ഡൗൺലോഡ് ചെയ്യുക!</i>\n\n<b>@FILESEARCHxBOT</b>',
                 protect_content=True if ident == "filep" else False 
             )
             msg1 = await query.message.reply(
@@ -446,7 +446,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
             )
             await query.answer('Check Out The Chat',)
-            await asyncio.sleep(60)
+            await asyncio.sleep(300)
             await msg1.delete()
             await msg.delete()
             del msg1, msg
@@ -521,7 +521,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 ),
                 reply_markup=reply_markup
             )
-        await query.answer('Piracy Is Crime')
+        await query.answer('Lᴏᴀᴅɪɴɢ..........')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='hud'),
