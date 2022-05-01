@@ -1115,7 +1115,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
             **locals()
         )
     else:
-        cap = f"𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖥𝗂𝗅𝗂𝗆 : {search} , 𝖶𝗁𝖺𝗍 𝖨 𝗁𝖺𝗏𝖾 𝖿𝗈𝗎𝗇𝖽 𝖠𝗋𝖾"
+        cap = f"<b>Hai 👋 {query.from_user.mention}</b> 😍\n\n<b>📁 Found ✨  Files For Your Query : {search} 👇</b> "
     if imdb and imdb.get('poster'):
         try:
             fmsg = await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
