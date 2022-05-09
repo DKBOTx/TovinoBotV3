@@ -87,13 +87,15 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🌀 {search} 🌀', 'dupe')
+            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url='https://t.me/filesearchxbot?startgroup=true')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'𝖥𝗂𝗅𝖾𝗌 : {len(files)}', 'dupe'),
-            InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'tips')
+            InlineKeyboardButton(f'ғɪʟᴇs: {len(files)}', 'dupe'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx'),
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
+            InlineKeyboardButton(f'ᴛɪᴘs', 'tips')
         ]
     )
 
@@ -1056,13 +1058,15 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton(f'🌀 {search} 🌀', 'dupe')
+            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url='https://t.me/filesearchxbot?startgroup=true')
         ]
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'𝖥𝗂𝗅𝖾𝗌 : {total_results}', 'dupe'),
-            InlineKeyboardButton(f'𝖳𝗂𝗉𝗌', 'tips')
+            InlineKeyboardButton(f'ғɪʟᴇs: {len(files)}', 'dupe'),
+            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx'),
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
+            InlineKeyboardButton(f'ᴛɪᴘs', 'tips')
         ]
     )
 
