@@ -480,15 +480,15 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 mention = mention
         if f_caption is None:
             f_caption = f"{title}"
-        if size is None:
-            size = f"{size}"
-        if mention is None:
-            mention = f"{mention}" 
         buttons = [
             [
                 InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url='https://t.me/FILESEARCHxBOT?startgroup=true')
             ]
             ]                
+        if size is None:
+            size = f"{size}"
+        if mention is None:
+            mention = f"{mention}" 
 
         await query.answer()
         await client.send_cached_media(
