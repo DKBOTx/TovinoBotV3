@@ -421,6 +421,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
             size = f"{files.file_size}"
             mention = f"{query.from_user.mention}"
+        buttons = [
+            [
+                InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url='https://t.me/FILESEARCHxBOT?startgroup=true')
+            ]
+            ]                
 
         try:
             msg = await client.send_cached_media(
