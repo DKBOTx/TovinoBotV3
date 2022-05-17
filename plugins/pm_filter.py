@@ -369,11 +369,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
-        button = [
-            [
-                InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url='https://t.me/FILESEARCHxBOT?startgroup=true')
-            ]
-            ]                
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -387,7 +382,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat_id=query.from_user.id,
                     file_id=file_id,
                     caption=f_caption,
-                    reply_markup = InlineKeyboardMarkup(button),
                     protect_content=True if ident == "filep" else False 
                 )
                 await query.answer('𝖨 𝗁𝖺𝗏𝖾 𝗌𝖾𝗇𝖽 𝗒𝗈𝗎 𝖿𝗂𝗅𝖾𝗌 𝖯𝖾𝗋𝗌𝗈𝗇𝖺𝗅𝗒 , 𝖢𝗁𝖾𝖼𝗄 𝗆𝗒 𝗉𝗆', show_alert=True)
@@ -427,12 +421,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f"{files.file_name}"
             size = f"{files.file_size}"
             mention = f"{query.from_user.mention}"
-        button = [
-            [
-                InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url='https://t.me/FILESEARCHxBOT?startgroup=true')
-            ]
-            ]                
-
+  
         try:
             msg = await client.send_cached_media(
                 chat_id=AUTH_CHANNEL,
@@ -494,19 +483,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if size is None:
             size = f"{size}"
         if mention is None:
-            mention = f"{mention}" 
-        button = [
-            [
-                InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉 ➕', url='https://t.me/FILESEARCHxBOT?startgroup=true')
-            ]
-            ]                
+            mention = f"{mention}"
 
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            reply_markup = InlineKeyboardMarkup(button),
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "pages":
