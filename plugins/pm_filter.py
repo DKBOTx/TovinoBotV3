@@ -87,7 +87,7 @@ async def next_page(bot, query):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url='https://t.me/filesearchxbot?startgroup=true')
+            InlineKeyboardButton(f'♨️ {search} ♨️ ', 'dupe')
         ]
     )
     btn.insert(1,
@@ -1057,7 +1057,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
 
     btn.insert(0, 
         [
-            InlineKeyboardButton('➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕', url='https://t.me/filesearchxbot?startgroup=true')
+            InlineKeyboardButton(f'♨️ {search} ♨️ ', 'dupe')
         ]
     )
     btn.insert(1,
