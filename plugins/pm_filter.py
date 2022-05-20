@@ -486,7 +486,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             mention = f"{mention}"
         buttons = [
             [
-                InlineKeyboardButton('『🎪 ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ 🎪』', url='https://t.me/movie_lookam')
+                InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url='https://t.me/filesearchxbot?startgroup=true')
             ]
             ]
 
