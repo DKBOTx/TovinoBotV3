@@ -92,9 +92,7 @@ async def next_page(bot, query):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
-            InlineKeyboardButton(f'ᴛɪᴘs', 'tips')
+            InlineKeyboardButton(f'ᴅᴏɴᴛ ᴄʟɪᴄᴋ ᴛʜɪs ʙᴜᴛᴛᴏɴ', 'tips')
         ]
     )
 
@@ -484,19 +482,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             size = f"{size}"
         if mention is None:
             mention = f"{mention}"
-        buttons = [
-            [
-                InlineKeyboardButton('➕ 𝖠𝖽𝖽 𝖡𝗈𝗍 𝖳𝗈 𝖸𝗈𝗎𝗋 𝖦𝗋𝗈𝗎𝗉𝗌 ➕', url='https://t.me/filesearchxbot?startgroup=true')
-            ]
-            ]
-
+       
 
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
             file_id=file_id,
             caption=f_caption,
-            reply_markup = InlineKeyboardMarkup(buttons),
             protect_content=True if ident == 'checksubp' else False
         )
     elif query.data == "pages":
@@ -1007,8 +999,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "close":
         await query.message.delete()
     elif query.data == 'tips':
-        await query.answer("» 𝖲𝖾𝗇𝖽 𝖼𝗈𝗋𝗋𝖾𝖼𝗍 𝖬𝗈𝗏𝗂𝖾/𝗌𝖾𝗋𝗂𝖾𝗌 𝖭𝖺𝗆𝖾\n » 𝖦𝖾𝗍 𝖡𝖾𝗍𝗍𝖾𝗋 𝗋𝖾𝗌𝗎𝗅𝗍 𝖥𝗈𝗋 𝗌𝖾𝗋𝗂𝖾𝗌 𝖤𝗀: 𝖯𝖾𝖺𝗄𝗒 𝖻𝗅𝗂𝗇𝖽𝖾𝗋𝗌 𝖲01𝖤01\n\n © 𝖣𝖪_𝖡𝖮𝖳𝗑", True)
-    try: await query.answer('Piracy Is Crime') 
+        await query.answer("𝖨 𝗌𝖺𝗂𝖽 𝖸𝗈𝗎 𝖪𝗇𝗈𝗐 𝖡𝗋𝗈...\n 𝗗𝗢𝗡'𝗧 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 , 𝖢𝗅𝗂𝖼𝗄 𝖳𝗁𝖾 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗎𝗍𝗍𝗈𝗇 𝖡𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖸𝗈𝗎𝗋 𝖥𝗂𝗅𝖾𝗌 \n\n © 𝖥𝖨𝖫𝖤𝖲𝖤𝖠𝖱𝖢𝖧𝗑𝖡𝖮𝖳", True)
+    try: await query.answer('Your Results are there in Filter Button') 
     except: pass
 
 
@@ -1069,9 +1061,7 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/dk_botx'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ', url='https://t.me/dkbotxchats'),
-            InlineKeyboardButton(f'ᴛɪᴘs', 'tips')
+            InlineKeyboardButton(f'ᴅᴏɴᴛ ᴄʟɪᴄᴋ ᴛʜɪs ʙᴜᴛᴛᴏɴ', 'tips')
         ]
     )
 
