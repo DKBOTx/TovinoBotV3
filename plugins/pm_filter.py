@@ -91,8 +91,10 @@ async def next_page(bot, query):
         ]
     )
     btn.insert(1,
-        [
-            InlineKeyboardButton(f'ᴅᴏɴᴛ ᴄʟɪᴄᴋ ᴛʜɪs ʙᴜᴛᴛᴏɴ', 'tips')
+        [ 
+            InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'dupe'),
+            InlineKeyboardButton(f'sᴇʀɪᴇs', 'dupe'),
+            InlineKeyboardButton(f'ᴛɪᴘs', 'tips')
         ]
     )
 
@@ -999,7 +1001,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "close":
         await query.message.delete()
     elif query.data == 'tips':
-        await query.answer("𝖨 𝗌𝖺𝗂𝖽 𝖸𝗈𝗎 𝖪𝗇𝗈𝗐 𝖡𝗋𝗈...\n 𝗗𝗢𝗡'𝗧 𝗖𝗟𝗜𝗖𝗞 𝗛𝗘𝗥𝗘 , 𝖢𝗅𝗂𝖼𝗄 𝖳𝗁𝖾 𝖥𝗂𝗅𝗍𝖾𝗋 𝖡𝗎𝗍𝗍𝗈𝗇 𝖡𝖾𝗅𝗈𝗐 𝗍𝗈 𝗀𝖾𝗍 𝖸𝗈𝗎𝗋 𝖥𝗂𝗅𝖾𝗌 \n\n © 𝖥𝖨𝖫𝖤𝖲𝖤𝖠𝖱𝖢𝖧𝗑𝖡𝖮𝖳", True)
+        await query.answer("sᴇɴᴅ ᴄᴏʀʀᴇᴄᴛ ᴍᴏᴠɪᴇ/sᴇʀɪᴇs ɴᴀᴍᴇ ғᴏʀ ʙᴇᴛᴛᴇʀ ʀᴇsᴜʟᴛs .\nᴛᴏ ɢᴇᴛ ʙᴇᴛᴛᴇʀ ʀᴇsᴜʟᴛ ғᴏʀ sᴇʀɪᴇs sᴇᴀʀᴄʜ ʟɪᴋᴇ ᴇxᴀᴍᴘʟᴇ ɢɪᴠᴇɴ, Eg - Peaky Blinders S01E01\n\n © 𝖥𝖨𝖫𝖤𝖲𝖤𝖠𝖱𝖢𝖧𝗑𝖡𝖮𝖳", True)
     try: await query.answer('Your Results are there in Filter Button') 
     except: pass
 
@@ -1061,7 +1063,9 @@ async def auto_filter(client, msg: pyrogram.types.Message, spoll=False):
     )
     btn.insert(1,
         [
-            InlineKeyboardButton(f'ᴅᴏɴᴛ ᴄʟɪᴄᴋ ᴛʜɪs ʙᴜᴛᴛᴏɴ', 'tips')
+            InlineKeyboardButton(f'ᴍᴏᴠɪᴇs', 'dupe'),
+            InlineKeyboardButton(f'sᴇʀɪᴇs', 'dupe'),
+            InlineKeyboardButton(f'ᴛɪᴘs', 'tips')
         ]
     )
 
