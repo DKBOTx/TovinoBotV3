@@ -1,4 +1,4 @@
-from asyncio import gathe
+from asyncio import gather
 from datetime import datetime, timedelta
 from io import BytesIO
 from math import atan2, cos, radians, sin, sqrt
