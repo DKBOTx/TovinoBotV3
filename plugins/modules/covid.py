@@ -1,4 +1,4 @@
-# @PaulWalker_TG
+# @vloggerdeven_TG 
 
 import os
 import requests
@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 API = "https://api.sumanjay.cf/covid/?country="
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/telegram')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('ᴜᴘᴅᴀᴛᴇs', url='https://t.me/DK_BOTx')]])
 
 
 @Client.on_message(filters.command("covid"))
@@ -38,15 +38,15 @@ def covid_info(country_name):
         recovered = info['recovered']
         covid_info = f"""--**Covid 19 Information**--
 
-Country : `{country}`
-Actived : `{active}`
-Confirmed : `{confirmed}`
-Deaths : `{deaths}`
-ID : `{info_id}`
-Last Update : `{last_update}`
-Latitude : `{latitude}`
-Longitude : `{longitude}`
-Recovered : `{recovered}`
+Country : ```{country}```
+Actived : ```{active}```
+Confirmed : ```{confirmed}```
+Deaths : ```{deaths}```
+ID : ```{info_id}```
+Last Update : ```{last_update}```
+Latitude : ```{latitude}```
+Longitude : ```{longitude}```
+Recovered : ```{recovered}```
 """
         return covid_info
     except Exception as error:
