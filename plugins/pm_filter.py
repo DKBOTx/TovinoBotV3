@@ -528,63 +528,26 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('𝖥𝗂𝗅𝗍𝖾𝗋', callback_data='hud'),
             InlineKeyboardButton('𝖨𝗆𝖽𝖻', callback_data='imbd'),
-            InlineKeyboardButton('𝖯𝗎𝗋𝗀𝖾', callback_data='purge'),
-            InlineKeyboardButton('𝖳𝗀𝗋𝖺𝗉𝗁', callback_data='tgraph')
-            ],[
-            InlineKeyboardButton('𝖬𝖾𝗆𝖾', callback_data='fun'),
-            InlineKeyboardButton('𝖬𝗎𝗍𝖾', callback_data='mute'),
-            InlineKeyboardButton('𝖡𝖺𝗇', callback_data='ban'),
             InlineKeyboardButton('𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗈𝗇', callback_data='coct')
             ],[
-            InlineKeyboardButton('𝖯𝗂𝗇', callback_data='pin'),
+            InlineKeyboardButton('𝖥𝗎𝗇', callback_data='fun'),
+            InlineKeyboardButton('𝖠𝖻𝗈𝗎𝗍', callback_data='about_menu'),
+            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗎𝗌', callback_data='stats')
+            ],[
+            InlineKeyboardButton('𝖡𝖺𝗇𝗌', callback_data='ban'),
+            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
+            InlineKeyboardButton('𝖯𝗂𝗇', callback_data='pin')
+            ],[
             InlineKeyboardButton('𝖨𝗇𝖿𝗈', callback_data='info'),
             InlineKeyboardButton('𝖩𝗌𝗈𝗇', callback_data='json'),
-            InlineKeyboardButton('𝖯𝗂𝗇𝗀', callback_data='ping')
-            ],[
-            InlineKeyboardButton('𝖢𝗈𝗏𝗂𝖽', callback_data='covid'),
-            InlineKeyboardButton('𝖲𝗈𝗇𝗀', callback_data='song'),
-            InlineKeyboardButton('Carbon', callback_data='carbon'),          
-            InlineKeyboardButton('𝖯𝖺𝗌𝗍𝖾', callback_data='paste')
-            ],[
-            InlineKeyboardButton('𝖦-𝖳𝗋𝖺𝗇𝗌', callback_data='gtrans'),
-            InlineKeyboardButton('TTS', callback_data='tts'),
-            InlineKeyboardButton('𝖲𝗍𝖺𝗍𝗌', callback_data='stats'),
-            InlineKeyboardButton('Logo', callback_data='lego')   
-            ],[
-            InlineKeyboardButton('Torrent', callback_data='trnt'),
-            InlineKeyboardButton('Url short', callback_data='urlshrt'),
-            InlineKeyboardButton('Weather', callback_data='weather'),
-            InlineKeyboardButton('Country', callback_data='cntry')
-            ],[     
-            InlineKeyboardButton('𝖢𝗅𝗈𝗌𝖾', callback_data='close_data'),
-            InlineKeyboardButton('Home', callback_data='start'),
-            InlineKeyboardButton('𝖡𝖺𝖼𝗄', callback_data='start')
+            InlineKeyboardButton('𝖢𝖺𝗋𝖻𝗈𝗇', callback_data='carbon')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text="▣▢▢▢▢▢"
-        )
-        await query.message.edit_text(
-            text="▣▣▢▢▢▢"
-        )
-        await query.message.edit_text(
-            text="▣▣▣▢▢▢"
-        )
-        await query.message.edit_text(
-            text="▣▣▣▣▢▢"
-        )
-        await query.message.edit_text(
-            text="▣▣▣▣▣▢"
-        )
-        await query.message.edit_text(
-            text="▣▣▣▣▣▣"
-        )
         await query.message.edit_text(
             text=script.HELP_TXT.format(query.from_user.mention),
             reply_markup=reply_markup,
             parse_mode='html'
-        )
-
+          )
     elif query.data == "about":
         await query.message.delete()
         await query.message.reply_sticker(
@@ -592,11 +555,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('📜ABOUT📜', callback_data='about_menu')
+                        InlineKeyboardButton('ᴀʙᴏᴜᴛ', callback_data='about_menu')
                     ],
                     [
-                        InlineKeyboardButton('Back🎀', callback_data='start'),
-                        InlineKeyboardButton('Close💤', callback_data='close')
+                        InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='start'),
+                        InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
                     ]
                 ]
             )
