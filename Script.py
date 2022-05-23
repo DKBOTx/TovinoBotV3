@@ -33,11 +33,11 @@ class script(object):
 ○ 𝖡𝗎𝗂𝗅𝖽 𝖲𝗍𝖺𝗍𝗎𝗌 : 𝖵9.8 [BeTa]
 """
     SOURCE_TXT = """<b>NOTE:</b>
-- This is a closed source project.   
+- 𝖳𝗈𝗏𝗂𝗇𝗈 𝖨𝗌 𝖺 𝖮𝗉𝖾𝗇 𝖲𝗈𝗎𝗋𝖼𝖾 𝖯𝗋𝗈𝗃𝖾𝖼𝗍 𝖻𝗒 𝖳𝖾𝖺𝗆 @DK_BOTx  
 
 CODES:
-1. Auto Filter
-2. Group Managing  
+
+» https://github.com/DKBOTx/TovinoBotV3
 """
     TTS_TXT = """<b>TEXT TO SPEACH</b>
 Simple Telegram Text-To-Speech Module.
