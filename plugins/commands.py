@@ -1,4 +1,4 @@
-import imp
+import im
 import os
 import logging
 import pyrogram
