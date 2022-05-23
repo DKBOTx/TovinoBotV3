@@ -1,5 +1,5 @@
 {
-    "name": "DK BOTx LTD",
+    "name": "Tovino Bot V3",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
     "stack": "container",
     "keywords": [
@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/vloggerdeven/vellachilaano",
-    "repository": "https://github.com/vloggerdeven/vellachilaano",
+    "website": "https://github.com/DKBOTx/TovinoBotV3",
+    "repository": "https://github.com/DKBOTx/TovinoBotV3",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -52,7 +52,7 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
-            "required": false
+            "required": true
         },
         "DATABASE_URI": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
@@ -73,17 +73,17 @@
             "required": false
         },
         "START_IMAGE_URL":{
-            "description": "Start image URL. Defaults to https://telegra.ph/file/85f36a9eb6c73c31bcded.jpg",
-            "value": "https://telegra.ph/file/85f36a9eb6c73c31bcded.jpg",
+            "description": "Start image URL. Defaults to https://telegra.ph/TovinoBotV3-05-23",
+            "value": "https://telegra.ph/TovinoBotV3-05-23",
             "required": false
         },
         "UNAUTHORIZED_CALLBACK_TEXT":{
             "description": "Text to show when unauthorized user tries to use bot. Defaults to 'oKda' (200 Char Limit).",
-            "value": "oKda",
+            "value": "𝙏𝙃𝙄𝙎 𝙄𝙎 𝙉𝙊𝙏 𝙂𝙐𝘿 𝘿𝙐𝘿𝙀",
             "required": false
         },
         "REDIRECT_TO":{
-            "description": "Username of the channel without '@' to send files and redirect users to. Deafults to 0 (no redirect).",
+            "description": "Username of the channel without '@' to send files and redirect users to. Deafults to 0 (no redirect). AUTH CHANNEL and REDIRECT Channel must be same",
             "value": "oKda",
             "required": false
         }
