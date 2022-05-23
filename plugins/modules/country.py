@@ -9,19 +9,19 @@ async def country_info(update: Message):
     country = CountryInfo(country)
     info = f"""--**Country Information**--
 
-Name : `{country.name()}`
-Native Name : `{country.native_name()}`
-Capital : `{country.capital()}`
-Population : `{country.population()}`
-Region : `{country.region()}`
-Sub Region : `{country.subregion()}`
-Top Level Domains : `{country.tld()}`
-Calling Codes : `{country.calling_codes()}`
-Currencies : `{country.currencies()}`
-Residence : `{country.demonym()}`
-Timezone : `{country.timezones()}`
+Name : ```{country.name()}```
+Native Name : ```{country.native_name()}```
+Capital : ```{country.capital()}```
+Population : ```{country.population()}```
+Region : ```{country.region()}```
+Sub Region : ```{country.subregion()}```
+Top Level Domains : ```{country.tld()}```
+Calling Codes : ```{country.calling_codes()}``|
+Currencies : ```{country.currencies()}```
+Residence : ```{country.demonym()}```
+Timezone : ```{country.timezones()}```
 
-Made by @DK_BOTx ❤️"""
+Made by @DK_BOTx """
     country_name = country.name()
     country_name = country_name.replace(" ", "+")
     reply_markup=InlineKeyboardMarkup(
