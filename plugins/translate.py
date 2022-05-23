@@ -1,4 +1,4 @@
-from googletrans import Translator
+from googletrans import Translato
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
 from .list import list
