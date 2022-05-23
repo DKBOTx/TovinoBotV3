@@ -10,13 +10,17 @@
 - [x] Broadcast
 - [x] Index
 - [x] IMDB search
+- [x] Pm File search
 - [x] Inline Search
-- [x] Random pics
+- [x] Single Start pic
 - [x] ids and User info 
 - [x] Stats, Users, Chats, Ban, Unban, Leave, Disable, Channel
 - [x] Spelling Check Feature
 - [x] File Store
 - [x] Carbon
+- [x] Json
+- [x] Sticker id
+- [x] Lyrics , Song
 - [x] TTS
 - [x] Redirect Chat
 - [x] Covid
@@ -39,7 +43,7 @@
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
 * `AUTH_CHANNEL` : Custom Fsub Channel , Redirect Channel Too
 ### Optional Variables
-* `PICS`: Telegraph links of images to show in start message.( Multiple images can't be used )
+* `PICS`: Telegraph link of image to show in start message.( Multiple images can't be used )
 * `REDIRECT_TO` : Redirect Var Set value 0 if Redirect not required
 * `FILE_STORE_CHANNEL`: Channel from were file store links of posts should be made.Separate multiple IDs by space
 * Check `info.py` in this code for more variables
@@ -85,6 +89,10 @@ python3 bot.py
 • /disable  -  do disable a chat.
 * /enable - re-enable chat.
 • /ban  - to ban a user.
+* /carbon - create carbon
+* /settings - customise chat settings
+* /tts - text to speech
+* /short - link shorter
 • /unban  - to unban a user.
 • /channel - to get list of total connected channels
 • /broadcast - to broadcast a message to all Eva Maria users
@@ -92,12 +100,11 @@ python3 bot.py
 • /link - to create link for one post
 ```
 ## Support
-[![telegram badge](https://img.shields.io/badge/Telegram-Group-30302f?style=flat&logo=telegram)](https://telegram.dog/EvaMariaSupport)
-[![telegram badge](https://img.shields.io/badge/Telegram-Channel-30302f?style=flat&logo=telegram)](https://telegram.dog/TeamEvamaria)
+[![𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx)
+[![𝙏𝙤𝙫𝙞𝙣𝙤 𝘽𝙤𝙩](https://telegram.dog/filesearchxbot)
 
 ## Credits 
-* [![EvaMaria-Devs](https://img.shields.io/static/v1?label=EvaMaria&message=devs&color=critical)](https://telegram.dog/EvaMariaDevs)
-
+* [![Base Repo Used](https://github.com/EvamariaTG/EvaMaria)
 
 ## Thanks to 
  - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
