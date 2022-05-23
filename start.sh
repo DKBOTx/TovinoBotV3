@@ -8,5 +8,5 @@ else
 fi
 cd /TovinoBotV3
 pip3 install -U -r requirements.txt
-echo "Starting 𝘋𝘒_𝘉𝘖𝘛𝘹.... 𝙏𝙊𝙑𝙄𝙉𝙊 "
+echo "Starting 𝘋𝘒_𝘉𝘖𝘛𝘹...."
 python3 bot.py
