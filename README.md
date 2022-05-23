@@ -100,11 +100,11 @@ python3 bot.py
 • /link - to create link for one post
 ```
 ## Support
-[![𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx)
-[![𝙏𝙤𝙫𝙞𝙣𝙤 𝘽𝙤𝙩](https://telegram.dog/filesearchxbot)
+[𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx)
+[𝙏𝙤𝙫𝙞𝙣𝙤 𝘽𝙤𝙩](https://telegram.dog/filesearchxbot)
 
 ## Credits 
-* [![Base Repo Used](https://github.com/EvamariaTG/EvaMaria)
+* [𝘉𝘈𝘚𝘌 𝘙𝘌𝘗𝘖 𝘜𝘚𝘌𝘋](https://github.com/EvamariaTG/EvaMaria)
 
 ## Thanks to 
  - Thanks To Dan For His Awesome [Library](https://github.com/pyrogram/pyrogram)
@@ -114,17 +114,17 @@ python3 bot.py
 
 ### Note
 
-[Note To A So Called Dev](https://telegram.dog/subin_works/203): 
+[𝘊𝘳𝘦𝘢𝘵𝘰𝘳](https://telegram.dog/aboutme_dk)
 
 Kanging this codes and and editing a few lines and releasing a V.x  or an [alpha](https://telegram.dog/subin_works/204), beta , gama branches of your repo won't make you a Developer.
-Fork the repo and edit as per your needs.
+Fork the repo and edit as per your needs. 𝘛𝘩𝘦𝘴𝘦 𝘢𝘳𝘦 𝘭𝘪𝘯𝘦𝘴 𝘧𝘳𝘰𝘮 𝘦𝘷𝘢 𝘥𝘦𝘷𝘴 , 𝘪𝘵𝘴 𝘳𝘪𝘨𝘩𝘵 𝘢𝘣𝘰𝘶𝘵 𝘮𝘦 . 
 
 ## Disclaimer
 [![GNU Affero General Public License 2.0](https://www.gnu.org/graphics/agplv3-155x51.png)](https://www.gnu.org/licenses/agpl-3.0.en.html#header)    
-Licensed under [GNU AGPL 2.0.](https://github.com/EvamariaTG/evamaria/blob/master/LICENSE)
+Licensed under [GNU AGPL 2.0.](https://github.com/DKBOTx/TovinoBotV3/blob/main/LICENSE)
 Selling The Codes To Other People For Money Is *Strictly Prohibited*.
 
-## Inspiration
-This is an attempt to create a clone of a BOAT made out of [banana trees 🌳](https://telegram.dog/GetTGLink/4187)
+## 𝙏𝙍𝙄𝘽𝙐𝙏𝙀 𝙏𝙊
 
-[![For Vaza](https://telegra.ph/file/e743b0c8a04252774bac2.jpg)](https://telegra.ph/file/98342dc186fd7484cba91.mp4 "Oru Kootam Vazhakalk samarpikkunnu")
+𝘍𝘰𝘳 𝘛𝘩𝘰𝘴𝘦 𝘨𝘶𝘺𝘴 𝘴𝘵𝘰𝘭𝘦 𝘤𝘰𝘥𝘦𝘴 🥲🤧
+
