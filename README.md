@@ -68,6 +68,7 @@ python3 bot.py
 </p>
 </details>
 
+𝙁𝙊𝙍𝙆 𝘼𝙉𝘿 𝙂𝙄𝘽 𝙎𝙊𝙈𝙀 𝙎𝙏𝘼𝙍𝙎 😁😊
 
 ## Commands
 ```
@@ -102,7 +103,8 @@ python3 bot.py
 • /link - to create link for one post
 ```
 ## Support
-[𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx)
+[𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx),
+
 [𝙏𝙤𝙫𝙞𝙣𝙤 𝘽𝙤𝙩](https://telegram.dog/filesearchxbot)
 
 ## Credits 
