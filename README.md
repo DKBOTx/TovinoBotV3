@@ -103,7 +103,9 @@ python3 bot.py
 • /link - to create link for one post
 ```
 ## Support
-[𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx),
+[𝘿𝙆_𝘽𝙊𝙏𝙭](https://telegram.dog/dk_botx)
+
+## Bot
 
 [𝙏𝙤𝙫𝙞𝙣𝙤 𝘽𝙤𝙩](https://telegram.dog/filesearchxbot)
 
