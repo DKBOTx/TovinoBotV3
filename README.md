@@ -18,13 +18,11 @@
 - [x] Spelling Check Feature
 - [x] File Store
 - [x] Carbon
-- [x] Json
 - [x] Sticker id
 - [x] Lyrics , Song
 - [x] TTS
 - [x] Redirect Chat
 - [x] Covid
-- [x] Country info
 - [x] Totally Customisable Bot
 
 ## 𝗠𝗨𝗦𝗧 𝗗𝗢
