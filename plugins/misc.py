@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 logger.setLevel(logging.ERROR)
 
 @Client.on_message(filters.command('id'))
-async def showid(client, message):
+async def showid(client, message, bot):
     chat_type = message.chat.type
     if chat_type == "private":
         user_id = message.chat.id
