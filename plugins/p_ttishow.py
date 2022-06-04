@@ -20,9 +20,6 @@ async def save_group(bot, message):
             r_j = message.from_user.mention if message.from_user else "Anonymous" 
             await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, r_j, link))       
             await db.add_chat(message.chat.id, message.chat.title)
-
-            try:
-                chat = int(chat)
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
