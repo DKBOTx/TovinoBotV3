@@ -25,10 +25,14 @@ async def showid(client, message):
         )
 
     elif chat_type in ["group", "supergroup"]:
+        link = bot.create_chat_invite_link(chat)
         _id = ""
         _id += (
             "<b>➲ Chat ID</b>: "
             f"<code>{message.chat.id}</code>\n"
+
+            "<b>➲ Chat Link</b>: "
+            f"<b>{link.invite_link}</b>\n"
         )
         if message.reply_to_message:
             _id += (
