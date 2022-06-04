@@ -28,7 +28,7 @@ async def showid(client, message, bot):
         _id = ""
         _id += (
             "<b>➲ Chat ID</b>: "
-            f"<code>{message.chat.id}</code>\n
+            f"<code>{message.chat.id}</code>\n"
         )
         if message.reply_to_message:
             _id += (
