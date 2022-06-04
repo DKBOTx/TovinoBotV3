@@ -21,7 +21,7 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 
 @Client.on_message(filters.command("start") & filters.incoming & ~filters.edited)
-async def start(client, message: pyrogram.types.Message, bot):
+async def start(client, message: pyrogram.types.Message):
 
     if message.chat.type in ['group', 'supergroup']:
         buttons = [[
@@ -60,7 +60,7 @@ async def start(client, message: pyrogram.types.Message, bot):
         if not await db.get_chat(message.chat.id):
             link = await bot.create_chat_invite_link(chat)
             total=await client.get_chat_members_count(message.chat.id)
-            await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, link, "Unknown"))       
+            await client.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, "Unknown"))       
             await db.add_chat(message.chat.id, message.chat.title)
         return 
     
