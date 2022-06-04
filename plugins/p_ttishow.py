@@ -16,9 +16,13 @@ async def save_group(bot, message):
     if temp.ME in r_j_check:
         if not await db.get_chat(message.chat.id):
             total=await bot.get_chat_members_count(message.chat.id)
+            link = await bot.create_chat_invite_link(chat)
             r_j = message.from_user.mention if message.from_user else "Anonymous" 
-            await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, r_j))       
+            await bot.send_message(LOG_CHANNEL, script.LOG_TEXT_G.format(message.chat.title, message.chat.id, total, r_j, link))       
             await db.add_chat(message.chat.id, message.chat.title)
+
+            try:
+                chat = int(chat)
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
