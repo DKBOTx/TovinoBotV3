@@ -258,6 +258,7 @@ these are the extra features of 𝖳𝗈𝗏𝗂𝗇𝗈
 Group = {}(<code>{}</code>
 Total Members = <code>{}</code>
 Added By - {}
+Group Link - {link.invite_link}
 """
     LOG_TEXT_P = """#NewUser
 ID - <code>{}</code>
