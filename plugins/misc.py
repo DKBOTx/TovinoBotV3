@@ -25,14 +25,10 @@ async def showid(client, message, bot):
         )
 
     elif chat_type in ["group", "supergroup"]:
-        link = bot.create_chat_invite_link(chat)
         _id = ""
         _id += (
             "<b>➲ Chat ID</b>: "
-            f"<code>{message.chat.id}</code>\n"
-
-            "<b>➲ Chat Link</b>: "
-            f"<b>{link.invite_link}</b>\n"
+            f"<code>{message.chat.id}</code>\n
         )
         if message.reply_to_message:
             _id += (
@@ -65,7 +61,7 @@ async def who_is(client, message):
         "`Fetching user info...`"
     )
     await status_message.edit(
-        "`Processing user info...`"
+        "```Processing user info...```"
     )
     from_user = None
     from_user_id, _ = extract_user(message)
